@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require 'bdd.php';
+require 'idconnect.php';
 
 $username = $_POST['name_user'];
 $password = $_POST['password'];

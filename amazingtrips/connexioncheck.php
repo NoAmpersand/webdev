@@ -10,7 +10,7 @@ $objectPdo = new PDO("mysql:host=$host;dbname=$bdd",$user,$mdpasse);
 if(!empty($username) && !empty($password) && !is_numeric($username)){
   $query = $objectPdo
   $queryPrep = $objectPdo->prepare('SELECT * FROM USER WHERE name_user = $username');
-  $loginIsOk = $pdoStat->execute();
+  $loginIsOk = $queryPrep->execute();
 
   if($loginIsOk && mysqli_num_rows($loginIsOk) > 0){
     $data = mysqli_fetch_assoc($loginIsOk);

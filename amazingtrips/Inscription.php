@@ -15,11 +15,11 @@
 
 <table >
 
-	<form name ="Inscription" action="reponse.php" method="POST">
+	<form name ="Inscription" action="inscriptioncheck.php" method="POST">
 
 
 
-	
+
 
 	<tr><td>Saisir votre nom*<br>
 		<input type="text" name="lastname"></td></tr>
@@ -30,13 +30,13 @@
 
 	<tr><td>Date de naissance<br>
 
-		
+
                     <!--<span ><?php echo $bdate; ?></span> -->
            <input type="date" min="1900-01-01" max="2010-01-01" name="birthdate" value="birthdate"><br>
                     <!--la date de naissance doit être postérieure au 01/01/1900 et antérieure au 01/01/2010-->
                 </td></tr>
 
-	
+
 
 
 	<tr><td>Adresse email*<br>
@@ -51,7 +51,7 @@
 
 
 
-	<p align="center"><input type="submit" value="Valider inscription" id="bouton"></p> 
+	<p align="center"><input type="submit" value="Valider inscription" id="bouton"></p>
 
 
 </form>
@@ -61,15 +61,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-	
-
-
-
-

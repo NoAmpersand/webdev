@@ -12,8 +12,8 @@ if(!empty($username) && !empty($password) && !is_numeric($username)){
   $queryPrep = $objectPdo->prepare('SELECT * FROM USER WHERE name_user = $username');
   $loginIsOk = $pdoStat->execute();
 
-  if($loginIsOk && mysqli_num_rows($loginIsOk) > 0){
-    $data = mysqli_fetch_assoc($loginIsOk);
+  if($loginIsOk && ($queryPrep -> rowCount() > 0)) {
+   $data = $queryPrep->fetch(PDO::FETCH_ASSOC);
     if($data['password'] == $password){
         $_SESSION['id_user'] = $data['id_user'];
 

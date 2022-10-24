@@ -38,6 +38,10 @@ echo date('l jS \of F Y h:i A');  ?>
 </dt>
 </dl>
 
+<br>
+<center><span class="button"> <a href="information.php" class="menu">Informations Villes </a></span></center>
+<br>
+
 <?php
 include('footer.php');
 ?>

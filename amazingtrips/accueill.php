@@ -25,25 +25,18 @@ echo date('l jS \of F Y h:i A');  ?>
 </table>
 	<div id="Nos voyages"> <p id="titre">Nos voyages</div> </p>
 
-<ul>
-<li>
+<dl>
+<dt>
 <table>
-<tr><th colspan="2"><a href="AT_Corse.php"h2><h2>CORSE</h2></a></th></tr>
+<tr><th colspan="2"><a href="AT_Corse.php"><img src="corse.webp"alt="impossible de télécharger l'image" width="400px" height="200px"></a></th></tr>
+<tr><th colspan="2"><a href="AT_Corse.php"><h2 align="center">CORSE</h2></a></th></tr>
 <tr>
-<th>Vol + hôtel </th>
-<th><h3>160€</h3></th>
+<td>Vol + hôtel </td>
+<td><h3>160€</h3></td>
 </tr>
 </table>
-</li>
-<li>
-<table>
-<tr><th colspan="2"><a href="AT_Maldives.php"h2><h2>Les Maldives</h2></a></th></tr>
-<tr>
-<th>Vol + hôtel </th>
-<th><h3>1600€</h3></th>
-</tr>
-</table>
-</li>
+</dt>
+</dl>
 
 <?php
 include('footer.php');

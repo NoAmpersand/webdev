@@ -5,7 +5,7 @@ require 'idconnect.php';
 
 $username = $_POST['name_user'];
 $password = $_POST['password'];
-$objectPdo = new PDO("mysql:host=localhost;dbname=Projet",'root','root');
+$objectPdo = new PDO("mysql:host=$host;dbname=$bdd",$user,$mdpasse);
 
 if(!empty($username) && !empty($password) && !is_numeric($username)){
   $query = $objectPdo

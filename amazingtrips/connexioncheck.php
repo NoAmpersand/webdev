@@ -1,19 +1,19 @@
 <?php
 session_start();
 
-require 'idconnect.php';
+require 'bdd.php';
 
 $username = $_POST['name_user'];
 $password = $_POST['password'];
-$objectPdo = new PDO("mysql:host=$host;dbname=$bdd",$user,$mdpasse);
+$objectPdo = new PDO("mysql:host=localhost;dbname=Projet",'root','root');
 
 if(!empty($username) && !empty($password) && !is_numeric($username)){
+  $query = $objectPdo
   $queryPrep = $objectPdo->prepare('SELECT * FROM USER WHERE name_user = $username');
-  $loginIsOk = $queryPrep->execute();
+  $loginIsOk = $pdoStat->execute();
 
-
-  if($loginIsOk && ($queryPrep -> rowCount() > 0)){
-    $data = $queryPrep->fetch(PDO::FETCH_ASSOC);
+  if($loginIsOk && mysqli_num_rows($loginIsOk) > 0){
+    $data = mysqli_fetch_assoc($loginIsOk);
     if($data['password'] == $password){
         $_SESSION['id_user'] = $data['id_user'];
 
@@ -21,8 +21,8 @@ if(!empty($username) && !empty($password) && !is_numeric($username)){
         die;
     }
   }
-    	echo "Mauvais nom d'utilisateur ou mot de passe";}
-    else{
-    	echo "Veuillez entrer des informations cohérentes";
-    }
+}
+
+
+
 ?>

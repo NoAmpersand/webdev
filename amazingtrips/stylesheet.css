@@ -149,3 +149,25 @@ img{
  	color: midnightblue;
  	font-style: bold;
  }
+
+.informations h1{
+    text-align:center;
+	color:midnightblue;
+}
+
+.informations main {   
+	background-color : #1717e7;
+	border-radius : 10px; 
+	padding : 30px; 
+	position: relative; 
+}
+
+.informations table{
+    border-collapse : collapse; margin : auto; 
+}
+
+.informations td,th { 
+    border : 1px solid black;
+    width : 300px; height : 30px; 
+    text-align : center;
+}

@@ -6,18 +6,20 @@
 
 <body>
 	<?php
-include('header.php');
-date_default_timezone_set('UTC');
-echo date('l jS \of F Y h:i:s A');
-?>
-	<p id="titre0bis"> Bienvenue chez AmazingTrips !</p><br><p id="titre0">Votre plus beau voyage commence ici !</p>
+include('header.php');?>
+<br><?php
+date_default_timezone_set('UTC'); 
+echo date('l jS \of F Y h:i A');  ?>
+
+	<p id="titre0bis"> Bienvenue chez AmazingTrips !</p><br>
+	<p id="titre0">Votre plus beau voyage commence ici !</p>
 	<table>
 		<tr><td>
 	<img src="beaupaysage.jpeg" alt="beau paysage" width="500" height="300">
 </td>
 <td>
-	<p> Nos vacances de rêve soigneusement sélectionnées <br>
-Et pourquoi ne pas réserver un voyage au long court qui vous semblait inaccessible ? Si les plages des Maldives sont les plus réputées, pourquoi ne pas tenter d'aller encore plus loin en nageant avec les requins dans les atolls de Tahiti ? A moins que vous n'osiez quitter les eaux claires des lagons et réserver un séjour en Tanzanie pour prendre votre petit déjeuner en compagnie des girafes, au cœur de la savane. Le rêve est différent pour chacun de nous, les aurores boréales et les paysages incroyables de l’Islande font eux aussi partie de ce domaine.  </p>
+	<h2 id="petittitre"> Nos vacances de rêve soigneusement sélectionnées</h2> <br>
+<p id="paragraphe">Et pourquoi ne pas réserver un voyage au long court qui vous semblait inaccessible ? Si les plages des Maldives sont les plus réputées, pourquoi ne pas tenter d'aller encore plus loin en nageant avec les requins dans les atolls de Tahiti ? Le rêve est différent pour chacun de nous, les paysages incroyables de la Corse font eux aussi partie de ce domaine.  </p>
 </td>
 </tr>
 </table>
@@ -48,3 +50,7 @@ include('footer.php');
 ?>
 
 </body>
+</ul>
+</div>
+</body>
+</html>

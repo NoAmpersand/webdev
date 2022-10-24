@@ -106,3 +106,46 @@ img{
 	width:250px;
 	height:200px;
 }
+
+#bouton{
+	 width: 15em;
+	 height: 3em;
+	 align-content: center;
+	 font-size: 15px;
+	 background-color: midnightblue;
+	 color:white; 
+
+
+}
+
+#title{
+	font-family: snell roundhand;
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+}
+
+#general{
+	font-family: arial;
+	width:100%;
+
+}
+
+#info{
+	font-style: italic;
+	font-size: 10px;
+}
+
+
+#tablau1{
+	border-spacing: 15px 20px;
+	border-collapse: separate;
+	table-layout: fixed;
+    width: 100%;
+    font-family: optima;
+	}
+
+ #encadrement{
+ 	color: midnightblue;
+ 	font-style: bold;
+ }

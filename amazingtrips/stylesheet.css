@@ -13,10 +13,10 @@
 #footer{
     margin: 0.625em 0px;
     padding: 0.7%;
-    
+
     color: black;
     background-color: #F5D7C8;
-    
+
 }
 
 .button{
@@ -78,7 +78,7 @@
 #footer{
     margin: 0.625em 0px;
     padding: 0.7%;
-    
+
     color: white;
     background-color: midnightblue;
     text-align: right;
@@ -105,4 +105,4 @@ h1{
 img{
 	width:250px;
 	height:200px;
-
+}

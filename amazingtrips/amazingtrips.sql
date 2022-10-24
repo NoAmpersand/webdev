@@ -62,6 +62,27 @@ INSERT INTO `trip` (`id_trip`, `name_trip`, `location`, `price`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `ville`
+--
+
+DROP TABLE IF EXISTS `ville`;
+CREATE TABLE IF NOT EXISTS `ville` (
+  `nomVille` VARCHAR(500) NOT NULL ,
+	`nbHabitants` VARCHAR(50) NOT NULL,
+	`nomPays` VARCHAR(500) NOT NULL,
+	`id` INT NOT NULL,
+	PRIMARY KEY(`id`)
+ );
+
+--
+-- Déchargement des données de la table `ville`
+--
+INSERT INTO `ville` (`nomVille`, `nbHabitants`, `nomPays`, `id`) VALUES ('Milan', '55', 'Italie', '0');
+INSERT INTO `ville` (`nomVille`, `nbHabitants`, `nomPays`, `id`) VALUES ('Paris', '60', 'France', '1');
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `user`
 --
 

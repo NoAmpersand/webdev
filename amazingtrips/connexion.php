@@ -21,8 +21,12 @@ if(!empty($username) && !empty($password) && !is_numeric($username)){
         die;
     }
   }
-}
+    	echo "mauvais nom d'utilisateur ou mot de passe";}
 
+    // si les informations sont mal renseignées
+    else{
+    	// message d'erreur
+    	echo "Veuillez entrer des informations cohérentes";
+    }
 
-
-?>
+    ?>
